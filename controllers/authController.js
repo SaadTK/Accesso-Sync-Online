@@ -36,7 +36,7 @@ export const registerController = async (req, res) => {
     const hashedPassword = await hashPassword(password);
 
     //save
-    const user = new userModel({
+    const user = await new userModel({
       name,
       email,
       phone,
