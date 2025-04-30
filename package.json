@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-app",
+  "version": "1.0.0",
+  "description": "An E-commerce web app for buying and selling garments accessories.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Tahmid Karim",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.4.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}
