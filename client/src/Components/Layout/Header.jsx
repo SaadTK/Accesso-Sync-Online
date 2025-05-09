@@ -1,15 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
+import { FcShop } from "react-icons/fc";
 
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" href="#">
-            Navbar
-          </NavLink>
+          <Link className="navbar-brand flex gap-[6px]">
+            <FcShop size={30} className="relative bottom-[2px]" />
+            Accesso-Sync
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,13 +26,13 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink
-                  to={"/"}
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#"
-                >
+                <NavLink to={"/"} className="nav-link ">
                   Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to={"/category"} className="nav-link  ">
+                  Category
                 </NavLink>
               </li>
               <li className="nav-item">
